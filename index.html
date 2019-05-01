@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Clock-Calendar</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+		.clock-calendar {
+			font-family: 'Orbitron', sans-serif;
+			font-weight: bold;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			padding: 5px;
+		}
+		button {
+			background-color: #35bf56;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			font-size: 14px;
+		}
+
+		button:hover {
+			cursor: pointer;
+		}
+
+		.button-disable {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<button class="button button-display">Display Clock</button>
+	<button class="button button-disable">Disable Clock</button>
+
+	<div class="clock-calendar">
+		<my-clock-calendar class="my-clock-calendar"></my-clock-calendar>
+	</div>
+
+
+	<script src="./clock-calendar.js"></script>
+	<script src="./main.js"></script>
+
+</body>
+
+</html>
